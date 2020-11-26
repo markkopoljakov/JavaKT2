@@ -17,12 +17,12 @@ public class Main {
         ArrayList <String> order = new ArrayList<String>();
         TavaBurger kanaBurger = new TavaBurger("Kana ja Lamba Burger");
         TavaBurger peekoniBurger = new TavaBurger("PeekoniBurger");
-        TavaBurger hobuseBurger = new TavaBurger("Viiekordse juustu Burger");
-        LuxBurger koeraBurger = new LuxBurger("TopeltMegaPeekoniga");
+        TavaBurger viiekordse_juustu_burger = new TavaBurger("Viiekordse juustu Burger");
+        LuxBurger topeltMegaPeekoniga = new LuxBurger("TopeltMegaPeekoniga");
         burgers.add(kanaBurger.getName());
         burgers.add(peekoniBurger.getName());
-        burgers.add(hobuseBurger.getName());
-        burgers.add(koeraBurger.getName());
+        burgers.add(viiekordse_juustu_burger.getName());
+        burgers.add(topeltMegaPeekoniga.getName());
         System.out.println("Saadaval olevad burgerid: " + burgers);
 
         String cont = "";
@@ -51,15 +51,15 @@ public class Main {
                     System.out.println("Jätka? (jah/ei): ");
                     cont = input.nextLine();
                 } else if (tellitavBurger.equals("Viiekordse juustu Burger")) {
-                    hobuseBurger.telliBurger(lisandiKomplekt);
-                    orderPrice += hobuseBurger.getPrice();
-                    order.add(hobuseBurger.toString());
+                    viiekordse_juustu_burger.telliBurger(lisandiKomplekt);
+                    orderPrice += viiekordse_juustu_burger.getPrice();
+                    order.add(viiekordse_juustu_burger.toString());
                     System.out.println("Jätka? (jah/ei): ");
                     cont = input.nextLine();
                 } else if (tellitavBurger.equals("TopeltMegaPeekoniga")) {
-                    koeraBurger.telliLuxBurger(lisandiKomplekt);
-                    orderPrice += koeraBurger.getPrice();
-                    order.add(koeraBurger.toString());
+                    topeltMegaPeekoniga.telliLuxBurger(lisandiKomplekt);
+                    orderPrice += topeltMegaPeekoniga.getPrice();
+                    order.add(topeltMegaPeekoniga.toString());
                     System.out.println("Jätka? (jah/ei): ");
                     cont = input.nextLine();
                 } else {
@@ -84,15 +84,15 @@ public class Main {
                     System.out.println("Jätka? (jah/ei): ");
                     cont = input.nextLine();
                 } else if (tellitavBurger.equals("Viiekordse juustu Burger")) {
-                    hobuseBurger.telliBurger(lisandiKomplekt);
-                    orderPrice += hobuseBurger.getPrice();
-                    order.add(hobuseBurger.toString());
+                    viiekordse_juustu_burger.telliBurger(lisandiKomplekt);
+                    orderPrice += viiekordse_juustu_burger.getPrice();
+                    order.add(viiekordse_juustu_burger.toString());
                     System.out.println("Jätka? (jah/ei): ");
                     cont = input.nextLine();
                 } else if (tellitavBurger.equals("TopeltMegaPeekoniga")) {
-                    koeraBurger.telliLuxBurger(lisandiKomplekt);
-                    orderPrice += koeraBurger.getPrice();
-                    order.add(koeraBurger.toString());
+                    topeltMegaPeekoniga.telliLuxBurger(lisandiKomplekt);
+                    orderPrice += topeltMegaPeekoniga.getPrice();
+                    order.add(topeltMegaPeekoniga.toString());
                     System.out.println("Jätka? (jah/ei): ");
                     cont = input.nextLine();
                 } else {
